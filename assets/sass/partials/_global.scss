@@ -1,0 +1,173 @@
+body {
+	padding-top: 64px;
+	@include breakpoint(small-down) {
+		padding-top: 44px;
+	}
+  	color: #222;
+}
+
+h1, .h1 {
+	font-size: 42px;
+	line-height: 42px;
+}
+
+.page h1 {
+	@include dnfont(PublicoHeadline Black);
+	margin-top: 0;
+}
+
+.lead-link,
+.lead-link:focus {
+	font-weight: 200;
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+}
+.no-float {
+	float: none;
+}
+.no-padding {
+	padding: 0;
+}
+
+.no-padding-left {
+	padding-left: 0;
+}
+
+.no-padding-right {
+	padding-right: 0;
+}
+.full-width {
+	width: 100%;
+}
+.share-area {
+	.share {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-size: 40px 40px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin: 0 5px 5px 0;
+		text-indent: -9999em;
+		@include border-radius(2px);
+		float: left;
+
+		&.share-facebook {
+			background-color: $facebook-color;
+			background-image: url(../images/icons/facebook-48.png);
+			&:hover {
+				background-color: darken($facebook-color,05);
+			}
+		}
+
+		&.share-twitter {
+			background-color: $twitter-color;
+			background-image: url(../images/icons/twitter-48.png);
+			&:hover {
+				background-color: darken($twitter-color,05);
+			}
+		}
+
+		&.share-googleplus {
+			background-color: $googleplus-color;
+			background-image: url(../images/icons/googleplus-48.png);
+			&:hover {
+				background-color: darken($googleplus-color,05);
+			}
+		}
+	}
+	.total-share {
+		position: relative;
+		display: inline-block;
+		background: #FFF;
+		font-size: 20px;
+		line-height: 40px;
+		height: 40px;
+		min-width: 40px;
+		float: left;
+		padding: 0 10px;
+		margin: 0 5px 5px 5px;
+		border: 1px solid #D3D3D3;
+		@include border-radius(2px);
+		color: $dn-darkgrey;
+		&:after 
+		{
+			content: '';
+			position: absolute;
+			border-style: solid;
+			border-width: 5px 5px 5px 0;
+			border-color: transparent #FFFFFF;
+			display: block;
+			width: 0;
+			z-index: 1;
+			left: -5px;
+			top: 15px;
+		}
+
+		&:before 
+		{
+			content: '';
+			position: absolute;
+			border-style: solid;
+			border-width: 5px 5px 5px 0;
+			border-color: transparent #D3D3D3;
+			display: block;
+			width: 0;
+			z-index: 0;
+			left: -6px;
+			top: 15px;
+		}
+	}
+
+	.input-group {
+		margin-top: 15px;
+		@include breakpoint(small-down) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	.input-group-addon {
+		background: #f9f9f9;
+		@include border-radius(2px);
+	}
+	.input-group-btn button {
+		background: #f9f9f9;
+		@include border-radius(2px);
+		padding: 9px 12px;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 1;
+		color: #555555;
+		border: 1px solid #ccc;
+		white-space: nowrap;
+	}
+}
+
+
+.loading-screen {
+	padding: 100px;
+	text-align: center;
+	p {
+		font-size: 16px;
+		font-weight: 800;
+		margin-top: 10px;
+	}
+}
+
+/* global */
+hr {
+	border: none;
+	height: 1px;
+	color: #333;
+	background-color: #333;
+	margin: 20px 0;
+	width: 100%;
+}
+a,
+a:hover {
+	color: #000;
+}
+
+
+

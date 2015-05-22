@@ -1,0 +1,10 @@
+.widget-area-fp {
+	> li {
+		display: block;
+		padding: 15px;
+		background: $dn-lightgrey;
+	}
+	> li > h4 {
+		margin-top: 0;
+	}
+}

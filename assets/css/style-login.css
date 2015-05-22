@@ -1,0 +1,42 @@
+body.login {
+  background: url("../images/bgbild-login-800.jpg") no-repeat fixed center 100%/cover #000;
+}
+
+body.login div#login h1 {
+  background: #fff;
+  padding: 20px;
+}
+
+body.login div#login h1 a {
+  background-image: url("../images/dnkort-logo.png");
+  background-size: contain;
+  width: 100%;
+  height: 42px;
+  margin: 0;
+}
+
+body.login div#login form#loginform {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+  background: #52CEC8;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-weight: 800;
+}
+
+body.login div#login p#nav {
+  display: none;
+}
+
+body.login div#login p#backtoblog {
+  background: #fff;
+  margin: 0;
+  border-top: 1px solid #E5E5E5;
+  padding: 20px;
+}

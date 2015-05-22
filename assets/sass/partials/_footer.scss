@@ -1,0 +1,201 @@
+footer.site-footer {
+	background: #424242;
+	color: $dn-lightgrey;
+	font-size: 16px;
+	margin-top: 60px;
+	.upper-footer {
+		background: #212121;
+		position: relative;
+		min-height: 86px;
+		.dn-footer-logo {
+			position: absolute;
+
+			// PRIO LOGO FOOTER
+			// left: 50%;
+			// top: -24px;
+			// margin-left: -43px;
+			// display: block;
+			// background-image: url(../images/icons/prio-icon-logo.png);
+			// width: 86px;
+			// height: 100px;
+
+			// DN LOGO FOOTER
+			// left: 50%;
+			// margin-left: -27px;
+			// background-image: url(../images/icons/dn-icon-logo.png);
+			// width: 53px;
+			// height: 64px;
+
+			width: 100%;
+			height: 5px;
+			left: 0;
+			right: 0;
+			top: 0;
+			margin: 0;
+			background-image: url(../images/mobile_footer_hr.png);
+			background-size: contain;
+
+			// STRIPE
+			@include breakpoint(small-down) {
+				width: 100%;
+				height: 10px;
+				left: 0;
+				right: 0;
+				top: 0;
+				margin: 0;
+				background-image: url(../images/mobile_footer_hr.png);
+				background-size: contain;
+			}
+		}
+		.col-xs-6 span {
+			// padding: 21px 50px 0;
+			padding: 28px 15px 0;
+			font-size: 30px;
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: clip;
+			@include dnfont(GuardianSans Bold);
+			@include breakpoint(small-down) {
+				padding: 20px 0;
+				font-size: 20px;
+			}
+		}
+		.col-xs-6.text-right span {
+			padding-left: 0;
+		}
+		.col-xs-6.text-left span {
+			padding-right: 0;
+		}
+		// Tablet
+		@include breakpoint(small-down) {
+			.col-xs-6.text-right span {
+				padding-top: 35px;
+				padding-left: 0;
+				text-align: left; // Invert
+			}
+			.col-xs-6.text-left span {
+				padding-top: 35px;
+				padding-right: 0;
+				text-align: right; // Invert
+			}
+		}
+		// Extra small
+		@include breakpoint(400px) {
+			.col-xs-6 {
+				width: 100%;
+			}
+			.col-xs-6.text-right span {
+				margin-top: 20px;
+			}
+			.col-xs-6.text-right span,
+			.col-xs-6.text-left span {
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
+	.main-footer {
+		position: relative;
+		a {
+			color: $dn-turq;
+  			text-decoration: underline;
+		}
+		.divider {
+			position: absolute;
+			left: 50%;
+			width: 1px;
+			height: 100%;
+			border-right: 1px dashed $dn-darkgrey;
+			display: block;
+			top: 0px;
+			@include breakpoint(small-down) {
+				display: none;
+			}
+		}
+		.left-side,
+		.right-side {
+			width: 50%;
+			float: left;
+			// padding: 40px 55px;
+			padding: 40px 30px;
+			margin: 0;
+			color: #fff;
+			@include breakpoint(small-down) {
+				width: 100%;
+				display: block;
+				padding: 40px 15px;
+				.row > div[class^="col"] {
+					margin-bottom: 40px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.left-side  {
+			@include breakpoint(small-down) {
+				border-bottom: 1px dashed $dn-darkgrey;
+			}
+		}
+		.right-side  {
+
+		}
+		h4 {
+			@include dnfont(GuardianSans Bold);
+			margin-top: 0;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			display: block;
+			float: left;
+		}
+		ul li {
+			padding: 0;
+			margin: 0;
+			float: left;
+			display: inline-block;
+		}
+		ul li a,
+		.tagcloud a {
+			padding: 1px 5px;
+			margin: 0 5px 5px 0;
+			float: left;
+			display: block;
+			background: #fff;
+			@include dnfont(GuardianSans Light);
+			@include border-radius(2px);
+			color: #4C4C4C;
+  			text-decoration: none;
+  			@include transition(all 0.2s ease-in);
+		}
+		.tagcloud a {
+			@include dnfont(GuardianSans Bold);
+		}
+		ul li a:hover,
+		.tagcloud a:hover {
+			background: #c4c4c4;
+		}
+		ul li a .label-xs,
+		.tagcloud a .label-xs {
+			top: -2px;
+			position: relative;
+		}
+		p,.textwidget {
+			@include dnfont(GuardianSans Light);
+		}
+		.widget + .widget {
+			margin-top: 40px;
+		}
+	}
+	.lower-footer {
+		background: #fff;
+		color: $dn-darkgrey;
+		font-size: 12px;
+		padding: 20px 0;
+		@include breakpoint(small-down) {
+			padding-bottom: 62px;
+		}
+	}
+}

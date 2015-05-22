@@ -1,0 +1,34 @@
+@mixin breakpoint($media) {
+    /* Landscape phones and down */
+    @if $media == xsmall {
+        @media (max-width: ($screen-xs - 1)) { @content; } // 0 - 480
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == small-down {
+        @media (max-width: ($screen-sm - 1)) {@content; } // 767
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == small {
+        @media (min-width: $screen-xs) and (max-width: ($screen-sm - 1)) {@content; } // 767
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == medium-down {
+        @media (max-width: ($screen-md - 1)) {@content; } // 767
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == medium {
+        @media (min-width: $screen-sm) and (max-width: ($screen-md - 1)) {@content; } // 767
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == medium-up {
+        @media (min-width: $screen-sm) {@content; } // 767
+    }
+    /* Landscape phone to portrait tablet */
+    @else if $media == large {
+        @media (min-width: $screen-md) {@content; } // 767
+    }
+    // Specific max width
+    @else {
+        @media only screen and (max-width: #{$media}) { @content; }
+    }
+}

@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'PublicoHeadline Black';
+  src: 	url("../fonts/dn/PublicoHeadline-Black-Web.eot");
+  src: 	url("../fonts/dn/PublicoHeadline-Black-Web.eot?#iefix") format("embedded-opentype"), 
+    		url("../fonts/dn/PublicoHeadline-Black-Web.woff") format("woff"), 
+    		url("../fonts/dn/PublicoHeadline-Black-Web.ttf") format("truetype"), 
+    		url("../fonts/dn/PublicoHeadline-Black-Web.svg") format("svg");
+}@font-face {
+  font-family: 'PublicoHeadline Roman';
+  src: 	url("../fonts/dn/PublicoHeadline-Roman-Web.eot");
+  src: 	url("../fonts/dn/PublicoHeadline-Roman-Web.eot?#iefix") format("embedded-opentype"), 
+    		url("../fonts/dn/PublicoHeadline-Roman-Web.woff") format("woff"), 
+    		url("../fonts/dn/PublicoHeadline-Roman-Web.ttf") format("truetype"), 
+    		url("../fonts/dn/PublicoHeadline-Roman-Web.svg") format("svg");
+}
+@font-face {
+  font-family: 'PublicoBanner Bold';
+  src: 	url("../fonts/dn/PublicoBanner-Bold-Web.eot");
+  src: 	url("../fonts/dn/PublicoBanner-Bold-Web.eot?#iefix") format("embedded-opentype"), 
+    		url("../fonts/dn/PublicoBanner-Bold-Web.woff") format("woff"), 
+    		url("../fonts/dn/PublicoBanner-Bold-Web.ttf") format("truetype"), 
+    		url("../fonts/dn/PublicoBanner-Bold-Web.svg") format("svg");
+}
+@font-face {
+  font-family: 'PublicoBanner Light';
+  src:  url("../fonts/dn/PublicoBanner-Light-Web.eot");
+  src:  url("../fonts/dn/PublicoBanner-Light-Web.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/dn/PublicoBanner-Light-Web.woff") format("woff"), 
+        url("../fonts/dn/PublicoBanner-Light-Web.ttf") format("truetype"), 
+        url("../fonts/dn/PublicoBanner-Light-Web.svg") format("svg");
+}
+@font-face {
+  font-family: 'GuardianSans Regular';
+  src:  url("../fonts/dn/GuardianSans-Regular-Web.eot");
+  src:  url("../fonts/dn/GuardianSans-Regular-Web.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/dn/GuardianSans-Regular-Web.woff") format("woff"), 
+        url("../fonts/dn/GuardianSans-Regular-Web.ttf") format("truetype"), 
+        url("../fonts/dn/GuardianSans-Regular-Web.svg") format("svg");
+}
+@font-face {
+  font-family: 'GuardianSans Bold';
+  src:  url("../fonts/dn/GuardianSans-Bold-Web.eot");
+  src:  url("../fonts/dn/GuardianSans-Bold-Web.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/dn/GuardianSans-Bold-Web.woff") format("woff"), 
+        url("../fonts/dn/GuardianSans-Bold-Web.ttf") format("truetype"), 
+        url("../fonts/dn/GuardianSans-Bold-Web.svg") format("svg");
+}
+@font-face {
+  font-family: 'GuardianSans Light';
+  src:  url("../fonts/dn/GuardianSans-Light-Web.eot");
+  src:  url("../fonts/dn/GuardianSans-Light-Web.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/dn/GuardianSans-Light-Web.woff") format("woff"), 
+        url("../fonts/dn/GuardianSans-Light-Web.ttf") format("truetype"), 
+        url("../fonts/dn/GuardianSans-Light-Web.svg") format("svg");
+}
+
+@mixin dnfont($font) {
+	font-family: $font;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+a,
+a:focus {
+	text-decoration: none;
+	color: #4C4C4C;	
+}
+:focus {
+  text-decoration: none !important;
+  outline: none;
+}

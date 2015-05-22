@@ -1,0 +1,17 @@
+$dn-red: 	#E90A2B;
+$dn-turq: 	#52CEC8;
+$dn-blue: 	#84BDE4;
+$dn-lightgrey: 	#F4F4F4;
+$dn-grey: 	#c4c4c4;
+$dn-darkgrey: #343434;
+
+$facebook-color: #3B5998;
+$twitter-color: #00ACED;
+$googleplus-color: #D14836;
+
+// Override bootstrap colors
+$brand-primary:         $dn-red;
+$brand-success:         $dn-blue;
+$brand-info:            $dn-turq;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
